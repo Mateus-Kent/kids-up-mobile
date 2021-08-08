@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text } from 'react-native';
-
+import { LinearGradient } from 'expo-linear-gradient';
 
 import ChooseImgSvg from '../../assets/ChooseImage.svg';
 
@@ -11,7 +11,8 @@ import { ButtonChoose } from '../../components/ButtonChoose';
 
 export function Choose(){
   return(
-  <View style={styles.container} >
+  <LinearGradient style={styles.container} 
+  colors={['#2D9CDB', '#2F80ED']}>
 
   <NotificationBar />
 
@@ -27,6 +28,6 @@ export function Choose(){
   
   <ButtonChoose />
 
-  </View>
+  </LinearGradient>
   );
 }

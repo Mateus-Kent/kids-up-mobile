@@ -1,11 +1,12 @@
 import { StyleSheet } from 'react-native'
 
+import { theme } from '../../global/styles';
+
 export const styles = StyleSheet.create({
  container: {
   flex: 1,
   justifyContent: 'center',
   alignItems: 'center',
-  backgroundColor: '#2D9CDB',
  },
  Svg:{
   marginBottom: 40,
@@ -13,14 +14,15 @@ export const styles = StyleSheet.create({
  title:{
   fontSize: 45,
   color: '#fff',
-  fontWeight: '700',
-  marginTop: 44
+  marginTop: 44,
+  fontFamily: theme.fonts.title700
  },
  text: {
   fontSize: 20,
   textAlign: 'center',
   marginBottom: 45,
   color: '#fff',
-  fontWeight: '700'
+  fontFamily: theme.fonts.title600,
+  opacity: 0.8
  }
 });
