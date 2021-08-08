@@ -1,5 +1,6 @@
 import React from 'react';
-import {View, Text, TouchableOpacity } from 'react-native';
+import {View, Text } from 'react-native';
+
 
 import ChooseImgSvg from '../../assets/ChooseImage.svg';
 
@@ -14,13 +15,15 @@ export function Choose(){
 
   <NotificationBar />
 
-  <ChooseImgSvg style={styles.Svg}/>
+  <Text style={styles.title}>KIDS UP</Text>
 
   <Text style={styles.text}>
   Um novo meio de {'\n'} 
-  comunicação entre {'\n'} 
-  pais e professores
+  comunicação entre pais e{'\n'} 
+  professores
   </Text>
+
+  <ChooseImgSvg style={styles.Svg}/>
   
   <ButtonChoose />
 
