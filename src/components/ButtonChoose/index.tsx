@@ -6,11 +6,11 @@ export function ButtonChoose(){
  return(
   <View>
   <TouchableOpacity activeOpacity={0.8}  style={styles.button1} >
-        <Text style={styles.textButton}>Sou Funcionário</Text>
+        <Text style={styles.textButton}>Sou funcionário</Text>
   </TouchableOpacity>
 
   <TouchableOpacity activeOpacity={0.8} style={styles.button2} >
-      <Text style={styles.textButton}>Sou Responsável</Text>
+      <Text style={styles.textButton}>Sou responsável</Text>
   </TouchableOpacity>
   </View>
  );

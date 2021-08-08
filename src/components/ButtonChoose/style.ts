@@ -1,5 +1,7 @@
 import { StyleSheet } from 'react-native'
 
+import { theme } from '../../global/styles';
+
 export const styles = StyleSheet.create({
  button1: {
   height: 50,
@@ -17,10 +19,10 @@ export const styles = StyleSheet.create({
   justifyContent: 'center',
   alignItems: 'center',
   borderRadius: 8,
-  marginBottom: 40
+  marginBottom: 40,
  },
  textButton: {
   fontSize: 22,
-  fontWeight: '700'
+  fontFamily: theme.fonts.title600
  }
 });
