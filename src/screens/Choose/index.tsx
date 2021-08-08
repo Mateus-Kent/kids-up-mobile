@@ -1,15 +1,20 @@
 import React from 'react';
 import {View, Text, TouchableOpacity } from 'react-native';
 
-import ChooseImgSvg from '../../../assets/ChooseImage.svg';
+import ChooseImgSvg from '../../assets/ChooseImage.svg';
 
 import { styles } from './styles'
+
+import { NotificationBar } from '../../components/Bar/NotificationBar';
+import { ButtonChoose } from '../../components/ButtonChoose';
 
 export function Choose(){
   return(
   <View style={styles.container} >
 
-   <ChooseImgSvg style={styles.Svg}/>
+  <NotificationBar />
+
+  <ChooseImgSvg style={styles.Svg}/>
 
   <Text style={styles.text}>
   Um novo meio de {'\n'} 
@@ -17,13 +22,7 @@ export function Choose(){
   pais e professores
   </Text>
   
-  <TouchableOpacity activeOpacity={0.8}  style={styles.button1} >
-        <Text style={styles.textButton}>Sou Funcionário</Text>
-  </TouchableOpacity>
-
-  <TouchableOpacity activeOpacity={0.8} style={styles.button2} >
-      <Text style={styles.textButton}>Sou Responsável</Text>
-  </TouchableOpacity>
+  <ButtonChoose />
 
   </View>
   );
