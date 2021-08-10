@@ -23,16 +23,15 @@ export function Choose(){
   </Text>
 
   <View style={styles.ViewContainer}>
-   <Text style={styles.caption}>Registrar</Text>
+  <Text style={styles.caption}>Registrar</Text>
 
+  <ButtonPattern  marginBottom={18} >
+   Sou responsável
+  </ButtonPattern> 
 
-   <ButtonPattern  marginBottom={18} >
-    Sou responsável
-   </ButtonPattern> 
-
-   <ButtonPattern >
+  <ButtonPattern >
     Sou funcionário
-   </ButtonPattern> 
+  </ButtonPattern> 
    
   </View>
 

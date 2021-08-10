@@ -13,7 +13,7 @@ import { useNavigation } from '@react-navigation/native';
 
 export function Become(){
 
-  
+  const navigation = useNavigation()
 
   return(
   <LinearGradient style={styles.container} 
@@ -31,7 +31,7 @@ export function Become(){
 
   <ChooseImgSvg style={styles.Svg}/>
   
-  <ButtonChoose  />
+  <ButtonChoose navigation={navigation} />
 
   </LinearGradient>
   );

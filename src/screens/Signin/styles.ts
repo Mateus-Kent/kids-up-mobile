@@ -42,6 +42,6 @@ export const styles = StyleSheet.create({
  },
  TextLink: {
   fontSize: 16,
-  FontFamily: theme.fonts.title600,
+  fontFamily: theme.fonts.title600,
  }
 });

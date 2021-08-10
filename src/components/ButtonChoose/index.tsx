@@ -4,25 +4,25 @@ import {View, Text } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import { styles } from './style';
 
-export function ButtonChoose({...rest}){
-
-const navigation = useNavigation()
-
-function handleBecome(){
-  navigation.navigate('Choose');
+type ButtonProps = {
+  navigation: any;
+  handleOnTapRegister?: any
 }
+
+export function ButtonChoose({ navigation} : ButtonProps){
+
 
  return(
   <View>
-  <RectButton  style={styles.button1} {...rest}> 
+  <RectButton  style={styles.button1}> 
         <Text style={styles.textButton}>Entrar</Text>
   </RectButton>
 
   <RectButton
-   style={styles.button2} {...rest}
-   onPress={handleBecome}
+   style={styles.button2}
+   onPress={() => navigation.navigate('Choose')}
    >
-      <Text style={styles.textButton}>Registrar</Text>
+      <Text style={styles.textButton} >Registrar</Text>
   </RectButton>
   </View>
  );
