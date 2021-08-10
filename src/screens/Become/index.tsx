@@ -1,13 +1,20 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+
+import ChooseImgSvg from '../../assets/ChooseImage.svg';
 
 import { styles } from './styles'
 
 import { NotificationBar } from '../../components/Bar/NotificationBar';
-import { ButtonPattern } from '../../components/ButtonPattern';
+import { ButtonChoose } from '../../components/ButtonChoose';
 
-export function Choose(){
+import { useNavigation } from '@react-navigation/native';
+
+export function Become(){
+
+  
+
   return(
   <LinearGradient style={styles.container} 
   colors={['#2D9CDB', '#2F80ED']}>
@@ -22,19 +29,9 @@ export function Choose(){
   professores
   </Text>
 
-  <View style={styles.ViewContainer}>
-   <Text style={styles.caption}>Registrar</Text>
-
-
-   <ButtonPattern  marginBottom={18} >
-    Sou responsável
-   </ButtonPattern> 
-
-   <ButtonPattern >
-    Sou funcionário
-   </ButtonPattern> 
-   
-  </View>
+  <ChooseImgSvg style={styles.Svg}/>
+  
+  <ButtonChoose  />
 
   </LinearGradient>
   );

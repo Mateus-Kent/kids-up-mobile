@@ -35,9 +35,13 @@ export const styles = StyleSheet.create({
   width: '100%',
   backgroundColor:"#fff",
   paddingBottom: 77,
-  paddingTop: 62,
-  paddingHorizontal: 42,
+  paddingTop: 37,
+  paddingHorizontal: 45,
   alignItems: 'center',
   justifyContent: 'space-between',
+ },
+ TextLink: {
+  fontSize: 16,
+  FontFamily: theme.fonts.title600,
  }
 });

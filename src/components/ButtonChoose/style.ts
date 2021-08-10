@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
   marginBottom: 40,
  },
  textButton: {
-  fontSize: 22,
+  fontSize: 18,
   fontFamily: theme.fonts.title600
  }
 });
