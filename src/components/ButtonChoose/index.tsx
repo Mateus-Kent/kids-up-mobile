@@ -1,4 +1,3 @@
-import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import {View, Text } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
@@ -14,7 +13,9 @@ export function ButtonChoose({ navigation} : ButtonProps){
 
  return(
   <View>
-  <RectButton  style={styles.button1}> 
+  <RectButton  style={styles.button1}
+  onPress={() => navigation.navigate('Login')}
+  > 
         <Text style={styles.textButton}>Entrar</Text>
   </RectButton>
 

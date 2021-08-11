@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { Become } from '../screens/Become';
 import { Choose } from '../screens/Choose';
 import { Signin } from '../screens/Signin';
+import { Login } from '../screens/Login';
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -24,6 +25,11 @@ export function AuthRoutes() {
    <Screen
    name="Choose"
    component={Choose}
+   />
+
+<Screen
+   name="Login"
+   component={Login}
    />
 
    <Screen 

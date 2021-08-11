@@ -11,7 +11,8 @@ export const styles = StyleSheet.create({
  title:{
   fontSize: 45,
   color: '#fff',
-  marginTop: 44,
+  marginTop: 83,
+  marginBottom: 80,
   fontFamily: theme.fonts.title700
  },
  caption:{

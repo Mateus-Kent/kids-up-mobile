@@ -11,7 +11,7 @@ import { Input } from '../../components/Input';
 import { useNavigation } from '@react-navigation/native';
 import { FormHandles } from '@unform/core';
 
-export function Signin(){
+export function Login(){
 
 const navigation = useNavigation()
 
@@ -22,8 +22,6 @@ function handleSubmit(data: any) {
 }
 
 return(
-<ScrollView>
-
 <LinearGradient 
 style={styles.container} 
 colors={['#2D9CDB', '#2F80ED']}
@@ -32,12 +30,12 @@ colors={['#2D9CDB', '#2F80ED']}
 
 <Text style={styles.title}>Kids up</Text>
 
+<ScrollView>
 
 <View style={styles.ViewContainer} >
- <Text style={styles.caption}>Registrar </Text>
+ <Text style={styles.caption}>Login</Text>
 
 <Form ref={formRef} onSubmit={handleSubmit}>
-
 
 
 <Text style={styles.label}>E-mail</Text> 
@@ -45,33 +43,23 @@ colors={['#2D9CDB', '#2F80ED']}
 placeholder="email@provedor.com" 
  marginBottom={20} />
 
-<Text style={styles.label}>Telefone</Text> 
-<Input name={"phone"}
- placeholder="(00) 900000-0000" 
- marginBottom={20} />
-
 <Text style={styles.label}>Senha</Text> 
 <Input name={"password"}
 placeholder="*******" 
 marginBottom={20} />
 
-<Text style={styles.label}>Confirme sua senha</Text> 
-<Input name={"confirm"} 
-placeholder="*******" 
-marginBottom={34} />
-
 </Form>
 
 <ButtonPattern  marginBottom={20}  navigation={navigation} >
- Próximo
+Entrar
 </ButtonPattern> 
 
-<Text>Já possui uma conta? <Text style={styles.LinkText}>Entre</Text> </Text>
+<Text>Você não possui uma conta?<Text style={styles.LinkText}> Registre-se</Text> </Text>
 
 </View>
 
+</ScrollView>
 </LinearGradient>
 
-</ScrollView>
  );
 }
