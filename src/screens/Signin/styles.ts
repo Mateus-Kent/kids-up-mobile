@@ -4,21 +4,20 @@ import { theme } from '../../global/styles';
 
 export const styles = StyleSheet.create({
  container: {
-  flex: 1,
+  flex: 0,
   justifyContent: 'space-between',
   alignItems: 'center',
  },
  title:{
   fontSize: 45,
   color: '#fff',
-  marginTop: 44,
+  marginTop: 30,
   fontFamily: theme.fonts.title700
  },
  caption:{
   fontSize: 32,
   color: '#000',
   fontFamily: theme.fonts.title700,
-  marginTop: 30,
   marginBottom: 30,
  },
  text: {
@@ -43,5 +42,8 @@ export const styles = StyleSheet.create({
  TextLink: {
   fontSize: 16,
   fontFamily: theme.fonts.title600,
+ },
+ LinkText: {
+  color: '#9600DD'
  }
 });

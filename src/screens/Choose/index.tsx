@@ -7,7 +7,12 @@ import { styles } from './styles'
 import { NotificationBar } from '../../components/Bar/NotificationBar';
 import { ButtonPattern } from '../../components/ButtonPattern';
 
+import { useNavigation } from '@react-navigation/native';
+
 export function Choose(){
+
+  const navigation = useNavigation()
+
   return(
   <LinearGradient style={styles.container} 
   colors={['#2D9CDB', '#2F80ED']}>
@@ -22,14 +27,14 @@ export function Choose(){
   professores
   </Text>
 
-  <View style={styles.ViewContainer}>
+  <View style={styles.ViewContainer} >
   <Text style={styles.caption}>Registrar</Text>
 
-  <ButtonPattern  marginBottom={18} >
+  <ButtonPattern  marginBottom={18} navigation={navigation} >
    Sou responsável
   </ButtonPattern> 
 
-  <ButtonPattern >
+  <ButtonPattern navigation={navigation} >
     Sou funcionário
   </ButtonPattern> 
    

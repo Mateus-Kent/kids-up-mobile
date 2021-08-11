@@ -11,8 +11,8 @@ export const styles = StyleSheet.create({
   width: '100%'
  },
  text: {
-  color: '#fff',
-  textAlign: 'center',
+ color: '#fff',
+ textAlign: 'center',
  fontFamily: theme.fonts.title600,
  fontSize: 18,
  }
