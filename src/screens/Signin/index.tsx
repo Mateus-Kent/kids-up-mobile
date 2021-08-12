@@ -22,7 +22,7 @@ export function Signin() {
     <KeyboardAvoidingView style={styles.keyBoard}>
     <ScrollView>
       <LinearGradient style={styles.container} colors={["#2D9CDB", "#2F80ED"]}>
-        <Text style={styles.title}>Kids up</Text>
+        <Text style={styles.title}>KIDS UP</Text>
 
         <View style={styles.ViewContainer}>
           <Text style={styles.caption}>Registrar </Text>

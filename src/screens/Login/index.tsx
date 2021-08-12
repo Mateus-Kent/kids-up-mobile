@@ -26,7 +26,7 @@ export function Login() {
           contentContainerStyle={styles.abacaxi}
         >
           <View style={styles.viewTitle}>
-            <Text style={styles.title}>Kids up</Text>
+            <Text style={styles.title}>KIDS UP</Text>
           </View>
 
           <View style={styles.ViewContainer}>
