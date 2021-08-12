@@ -3,18 +3,22 @@ import { StyleSheet } from 'react-native'
 import { theme } from '../../global/styles';
 
 export const styles = StyleSheet.create({
+ keyBoard: {
+  flex: 1,
+  width: '100%',
+ },
  container: {
   flex: 0,
   justifyContent: 'space-between',
   alignItems: 'center',
  },
- title:{
+ title: {
   fontSize: 45,
   color: '#fff',
   marginTop: 44,
   fontFamily: theme.fonts.title700
  },
- caption:{
+ caption: {
   fontSize: 32,
   color: '#000',
   fontFamily: theme.fonts.title700,
@@ -28,11 +32,11 @@ export const styles = StyleSheet.create({
   fontFamily: theme.fonts.title600,
   opacity: 0.8
  },
- ViewContainer:{
+ ViewContainer: {
   borderTopLeftRadius: 20,
   borderTopRightRadius: 20,
   width: '100%',
-  backgroundColor:"#fff",
+  backgroundColor: "#fff",
   paddingBottom: 77,
   paddingTop: 37,
   paddingHorizontal: 45,

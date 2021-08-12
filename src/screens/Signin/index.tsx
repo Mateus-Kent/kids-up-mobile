@@ -1,77 +1,64 @@
-import React, { useRef } from 'react';
-import { LinearGradient } from 'expo-linear-gradient';
-import {View, Text, ScrollView } from 'react-native';
-import { Form } from '@unform/mobile';
+import React, { useRef } from "react";
+import { LinearGradient } from "expo-linear-gradient";
+import { View, Text, ScrollView, KeyboardAvoidingView } from "react-native";
+import { Form } from "@unform/mobile";
 
-import { styles } from './styles'
+import { styles } from "./styles";
 
-import { ButtonPattern } from '../../components/ButtonPattern';
-import { Input } from '../../components/Input';
+import { ButtonPattern } from "../../components/ButtonPattern";
+import { Input } from "../../components/Input";
 
-import { useNavigation } from '@react-navigation/native';
-import { FormHandles } from '@unform/core';
+import { useNavigation } from "@react-navigation/native";
+import { FormHandles } from "@unform/core";
 
-export function Signin(){
+export function Signin() {
+  const navigation = useNavigation();
 
-const navigation = useNavigation()
+  const formRef = useRef<FormHandles>(null);
 
-const formRef = useRef<FormHandles>(null);
+  function handleSubmit(data: any) {}
 
-function handleSubmit(data: any) {
+  return (
+    <KeyboardAvoidingView style={styles.keyBoard}>
+    <ScrollView>
+      <LinearGradient style={styles.container} colors={["#2D9CDB", "#2F80ED"]}>
+        <Text style={styles.title}>Kids up</Text>
 
-}
+        <View style={styles.ViewContainer}>
+          <Text style={styles.caption}>Registrar </Text>
 
-return(
-<ScrollView>
+          <Form ref={formRef} onSubmit={handleSubmit}>
+            <Text style={styles.label}>E-mail</Text>
+            <Input
+              name={"email"}
+              placeholder="email@provedor.com"
+              marginBottom={20}
+            />
 
-<LinearGradient 
-style={styles.container} 
-colors={['#2D9CDB', '#2F80ED']}
->
+            <Text style={styles.label}>Telefone</Text>
+            <Input
+              name={"phone"}
+              placeholder="(00) 900000-0000"
+              marginBottom={20}
+            />
 
+            <Text style={styles.label}>Senha</Text>
+            <Input name={"password"} placeholder="*******" marginBottom={20} />
 
-<Text style={styles.title}>Kids up</Text>
+            <Text style={styles.label}>Confirme sua senha</Text>
+            <Input name={"confirm"} placeholder="*******" marginBottom={34} />
+          </Form>
 
+          <ButtonPattern marginBottom={20} navigation={navigation}>
+            Próximo
+          </ButtonPattern>
 
-<View style={styles.ViewContainer} >
- <Text style={styles.caption}>Registrar </Text>
-
-<Form ref={formRef} onSubmit={handleSubmit}>
-
-
-
-<Text style={styles.label}>E-mail</Text> 
-<Input name={"email"} 
-placeholder="email@provedor.com" 
- marginBottom={20} />
-
-<Text style={styles.label}>Telefone</Text> 
-<Input name={"phone"}
- placeholder="(00) 900000-0000" 
- marginBottom={20} />
-
-<Text style={styles.label}>Senha</Text> 
-<Input name={"password"}
-placeholder="*******" 
-marginBottom={20} />
-
-<Text style={styles.label}>Confirme sua senha</Text> 
-<Input name={"confirm"} 
-placeholder="*******" 
-marginBottom={34} />
-
-</Form>
-
-<ButtonPattern  marginBottom={20}  navigation={navigation} >
- Próximo
-</ButtonPattern> 
-
-<Text>Já possui uma conta? <Text style={styles.LinkText}>Entre</Text> </Text>
-
-</View>
-
-</LinearGradient>
-
-</ScrollView>
- );
+          <Text>
+            Já possui uma conta? <Text style={styles.LinkText}>Entre</Text>{" "}
+          </Text>
+        </View>
+      </LinearGradient>
+    </ScrollView>
+    </KeyboardAvoidingView>
+  );
 }

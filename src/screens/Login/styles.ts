@@ -3,19 +3,38 @@ import { StyleSheet } from 'react-native'
 import { theme } from '../../global/styles';
 
 export const styles = StyleSheet.create({
+ keyBoard: {
+  flex: 1,
+  width: '100%',
+ },
  container: {
-  flex: 0,
+  flex: 1,
   justifyContent: 'space-between',
   alignItems: 'center',
+  width: '100%',
  },
- title:{
+ scroll: {
+  flex: 1,
+  width: '100%'
+ },
+ abacaxi: {
+  minHeight: '100%',
+  width: '100%',
+  justifyContent: 'center',
+  position: 'relative'
+ },
+ title: {
   fontSize: 45,
   color: '#fff',
-  marginTop: 83,
-  marginBottom: 80,
   fontFamily: theme.fonts.title700
  },
- caption:{
+ viewTitle: {
+  alignItems: 'center',
+  paddingBottom: 80,
+  paddingHorizontal: 80,
+  paddingTop: 80
+ },
+ caption: {
   fontSize: 32,
   color: '#000',
   fontFamily: theme.fonts.title700,
@@ -24,21 +43,20 @@ export const styles = StyleSheet.create({
  text: {
   fontSize: 20,
   textAlign: 'center',
-  marginBottom: 45,
   color: '#fff',
   fontFamily: theme.fonts.title600,
   opacity: 0.8
  },
- ViewContainer:{
+ ViewContainer: {
+  flex: 1,
   borderTopLeftRadius: 20,
   borderTopRightRadius: 20,
   width: '100%',
-  backgroundColor:"#fff",
-  paddingBottom: 77,
-  paddingTop: 37,
+  backgroundColor: "#fff",
   paddingHorizontal: 45,
   alignItems: 'center',
   justifyContent: 'space-between',
+  paddingVertical: 30,
  },
  label: {
   fontSize: 14,

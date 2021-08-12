@@ -1,45 +1,38 @@
-import React from 'react';
-import { Text, View } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
+import React from "react";
+import { Text, View } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
 
-import { styles } from './styles'
+import { styles } from "./styles";
 
-import { NotificationBar } from '../../components/Bar/NotificationBar';
-import { ButtonPattern } from '../../components/ButtonPattern';
+import { NotificationBar } from "../../components/Bar/NotificationBar";
+import { ButtonPattern } from "../../components/ButtonPattern";
 
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation } from "@react-navigation/native";
 
-export function Choose(){
+export function Choose() {
+  const navigation = useNavigation();
 
-  const navigation = useNavigation()
+  return (
+    <LinearGradient style={styles.container} colors={["#2D9CDB", "#2F80ED"]}>
+      <NotificationBar />
 
-  return(
-  <LinearGradient style={styles.container} 
-  colors={['#2D9CDB', '#2F80ED']}>
+      <Text style={styles.title}>KIDS UP</Text>
 
-  <NotificationBar />
+      <Text style={styles.text}>
+        Um novo meio de {"\n"}
+        comunicação entre pais e{"\n"}
+        professores
+      </Text>
 
-  <Text style={styles.title}>KIDS UP</Text>
+      <View style={styles.ViewContainer}>
+        <Text style={styles.caption}>Registrar</Text>
 
-  <Text style={styles.text}>
-  Um novo meio de {'\n'} 
-  comunicação entre pais e{'\n'} 
-  professores
-  </Text>
+        <ButtonPattern marginBottom={18} navigation={navigation}>
+          Sou responsável
+        </ButtonPattern>
 
-  <View style={styles.ViewContainer} >
-  <Text style={styles.caption}>Registrar</Text>
-
-  <ButtonPattern  marginBottom={18} navigation={navigation} >
-   Sou responsável
-  </ButtonPattern> 
-
-  <ButtonPattern navigation={navigation} >
-    Sou funcionário
-  </ButtonPattern> 
-   
-  </View>
-
-  </LinearGradient>
+        <ButtonPattern navigation={navigation}>Sou funcionário</ButtonPattern>
+      </View>
+    </LinearGradient>
   );
 }
