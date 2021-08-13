@@ -23,7 +23,7 @@ export function Login() {
       <LinearGradient style={styles.container} colors={["#2D9CDB", "#2F80ED"]}>
         <ScrollView
           style={styles.scroll}
-          contentContainerStyle={styles.abacaxi}
+          contentContainerStyle={styles.scroll2}
         >
           <View style={styles.viewTitle}>
             <Text style={styles.title}>KIDS UP</Text>
@@ -48,7 +48,7 @@ export function Login() {
               />
             </Form>
 
-            <ButtonPattern marginBottom={20} navigation={navigation}>
+            <ButtonPattern  navigation={navigation}>
               Entrar
             </ButtonPattern>
 
