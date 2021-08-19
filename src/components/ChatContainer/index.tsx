@@ -1,15 +1,30 @@
-import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
-import { View } from "react-native";
+import { View, Image, Text } from "react-native";
 import { styles } from "./styles";
 
-export function ButtonPattern() {
-  return (
-    <LinearGradient
-      style={styles.container}
-      colors={["#2F80ED", "#6312C9"]}
-    >
+import defaultProfile from "../../assets/defaultProfile.png"
 
-    </LinearGradient>
+export function ChatContainer() {
+  return (
+    <View
+      style={styles.container}
+    >
+      <View>
+     <Image source={defaultProfile} style={styles.profilePic}/>
+     </View>
+
+     <View>
+       <Text style={styles.name}>Jennifer Lawrence</Text>
+       <Text style={styles.chatPreview}>Boa tarde o Eduardo tá...</Text>
+     </View>
+
+     <View style={styles.notification}>
+       <Text style={styles.hour}>18:31</Text>
+       <View style={styles.number}>
+         <Text style={styles.numberNotification}>4</Text>
+       </View>
+     </View>
+
+    </View>
   );
 }

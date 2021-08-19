@@ -8,7 +8,7 @@ export function ConfigIcon() {
 
   return (
     <View style={styles.container}>
-     <MenuSvg />
+     <MenuSvg  />
     </View>
   );
 }

@@ -4,28 +4,24 @@ import { View, Text, ScrollView, KeyboardAvoidingView } from "react-native";
 
 import { styles } from "./styles";
 
-import { ConfigIcon } from "../../components/ConfigIcon"
+import { ConfigIcon } from "../../components/ConfigIcon";
+import {ChatContainer} from "../../components/ChatContainer";
 
-export function Login() {
+export function MainScreen() {
   return (
-    <KeyboardAvoidingView style={styles.keyBoard}>
-      <LinearGradient style={styles.container} colors={["#2D9CDB", "#2F80ED"]}>
-        <ScrollView
-          style={styles.scroll}
-          contentContainerStyle={styles.scroll2}
-        >
-         <View>
-         <Text style={styles.title}>Conversas</Text>
+    <LinearGradient style={styles.container} colors={["#2D9CDB", "#2F80ED"]}>
+      <ScrollView style={styles.scroll} contentContainerStyle={styles.scroll2}>
+        <View style={styles.viewBar}>
+          <Text style={styles.title}>Conversas</Text>
 
-         <ConfigIcon />
-         </View>
-         
+          <ConfigIcon />
+        </View>
 
-          <View style={styles.container}>
+        <View style={styles.ViewContainer}>
 
-          </View>
-        </ScrollView>
-      </LinearGradient>
-    </KeyboardAvoidingView>
+          <ChatContainer />
+        </View>
+      </ScrollView>
+    </LinearGradient>
   );
 }
