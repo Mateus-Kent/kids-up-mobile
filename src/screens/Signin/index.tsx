@@ -11,8 +11,11 @@ import { Input } from "../../components/Input";
 import { useNavigation } from "@react-navigation/native";
 import { FormHandles } from "@unform/core";
 
-export function Signin() {
-  const navigation = useNavigation();
+type SigninProps = {
+  navigation: any
+  }
+
+export function Signin({ navigation}: SigninProps ) {
 
   const formRef = useRef<FormHandles>(null);
 
@@ -49,7 +52,7 @@ export function Signin() {
             <Input name={"confirm"} placeholder="*******" marginBottom={34} />
           </Form>
 
-          <ButtonPattern marginBottom={20} navigation={navigation}>
+          <ButtonPattern marginBottom={20}  onPress={() => navigation.navigate('MainScreen')}>
             Próximo
           </ButtonPattern>
 

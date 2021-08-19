@@ -1,24 +1,22 @@
 import React from "react";
 import { Text } from "react-native";
-import { RectButton } from "react-native-gesture-handler";
+import { RectButton, RectButtonProps } from "react-native-gesture-handler";
 import { styles } from "./styles";
 
 type ButtonProps = {
   children: String;
   marginBottom?: number;
-  navigation: any;
-  onPress?: any;
-};
+} & RectButtonProps
 
 export function ButtonPattern({
   children,
   marginBottom,
-  navigation,
+  ...rest
 }: ButtonProps) {
   return (
     <RectButton
       style={[styles.button, { marginBottom }]}
-      onPress={() => navigation.navigate("Signin")}
+      {...rest}
     >
       <Text style={styles.text}> {children} </Text>
     </RectButton>

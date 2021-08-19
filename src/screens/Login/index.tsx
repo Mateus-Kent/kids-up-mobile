@@ -11,8 +11,12 @@ import { Input } from "../../components/Input";
 import { useNavigation } from "@react-navigation/native";
 import { FormHandles } from "@unform/core";
 
-export function Login() {
-  const navigation = useNavigation();
+
+type LoginProps = {
+  navigation: any
+  }
+
+export function Login({navigation}: LoginProps) {
 
   const formRef = useRef<FormHandles>(null);
 
@@ -48,7 +52,7 @@ export function Login() {
               />
             </Form>
 
-            <ButtonPattern  navigation={navigation}>
+            <ButtonPattern  onPress={() => navigation.navigate('MainScreen')}>
               Entrar
             </ButtonPattern>
 
