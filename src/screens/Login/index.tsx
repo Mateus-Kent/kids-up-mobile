@@ -8,9 +8,7 @@ import { styles } from "./styles";
 import { ButtonPattern } from "../../components/ButtonPattern";
 import { Input } from "../../components/Input";
 
-import { useNavigation } from "@react-navigation/native";
 import { FormHandles } from "@unform/core";
-
 
 type LoginProps = {
   navigation: any

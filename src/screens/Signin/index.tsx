@@ -8,7 +8,6 @@ import { styles } from "./styles";
 import { ButtonPattern } from "../../components/ButtonPattern";
 import { Input } from "../../components/Input";
 
-import { useNavigation } from "@react-navigation/native";
 import { FormHandles } from "@unform/core";
 
 type SigninProps = {
@@ -52,7 +51,7 @@ export function Signin({ navigation}: SigninProps ) {
             <Input name={"confirm"} placeholder="*******" marginBottom={34} />
           </Form>
 
-          <ButtonPattern marginBottom={20}  onPress={() => navigation.navigate('MainScreen')}>
+          <ButtonPattern marginBottom={20}  onPress={() => navigation.navigate('SelectPhoto')}>
             Próximo
           </ButtonPattern>
 

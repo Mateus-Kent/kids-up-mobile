@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
+import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
-import { View, Text, ScrollView, KeyboardAvoidingView } from "react-native";
+import { View, Text, ScrollView } from "react-native";
 
 import { styles } from "./styles";
 
