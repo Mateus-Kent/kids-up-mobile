@@ -8,6 +8,7 @@ export const styles = StyleSheet.create({
   justifyContent: 'space-between',
   alignItems: 'center',
   width: '100%',
+  position: 'relative',
  },
  scroll: {
   flex: 1,
@@ -30,12 +31,12 @@ export const styles = StyleSheet.create({
   paddingHorizontal: 32
  },
  title: {
-  fontSize: 28,
+  fontSize: 35,
   color: '#fff',
   fontFamily: theme.fonts.title700
  },
  ViewContainer: {
-  flex: 5,
+  flex: 7,
   borderTopLeftRadius: 20,
   borderTopRightRadius: 20,
   width: '100%',
@@ -44,13 +45,5 @@ export const styles = StyleSheet.create({
   alignItems: 'center',
   justifyContent: 'space-between',
   paddingVertical: 30,
- },
- add: {
-  width: 50,
-  height: 50,
-  borderRadius: 50,
-  alignItems: 'center',
-  justifyContent: 'center',
-  backgroundColor: 'rgba(45, 156, 219, 1)'
- },
+ }
 });

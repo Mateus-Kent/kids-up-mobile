@@ -7,6 +7,9 @@ export const styles = StyleSheet.create({
   borderRadius: 50,
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundColor: 'rgba(45, 156, 219, 1)'
+  backgroundColor: 'rgba(45, 156, 219, 1)',
+  position: 'absolute',
+  left: '105%',
+  top: '100%'
  },
 });

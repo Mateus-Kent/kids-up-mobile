@@ -23,11 +23,7 @@ export function MainScreen() {
         <View style={styles.ViewContainer}>
           <ChatContainer />
 
-        <View>
-        <AddPersonButton />
-          </View>
-
-
+          <AddPersonButton />
         </View>
       </ScrollView>
     </LinearGradient>
