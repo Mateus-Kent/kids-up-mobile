@@ -1,11 +1,14 @@
 import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { View, Text, ScrollView } from "react-native";
+import { RectButton } from "react-native-gesture-handler";
 
 import { styles } from "./styles";
 
 import { ConfigIcon } from "../../components/ConfigIcon";
-import {ChatContainer} from "../../components/ChatContainer";
+import { ChatContainer } from "../../components/ChatContainer";
+import { Ionicons } from "@expo/vector-icons";
+import { AddPersonButton } from "../../components/AddPersonButton";
 
 export function MainScreen() {
   return (
@@ -18,8 +21,13 @@ export function MainScreen() {
         </View>
 
         <View style={styles.ViewContainer}>
-
           <ChatContainer />
+
+        <View>
+        <AddPersonButton />
+          </View>
+
+
         </View>
       </ScrollView>
     </LinearGradient>

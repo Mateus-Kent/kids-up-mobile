@@ -34,7 +34,6 @@ export function SelectPhoto({ navigation }: SelectProps) {
           <Input
             name={"username"}
             placeholder="nome de usuário"
-            marginBottom={30}
           />
         </Form>
 

@@ -4,7 +4,7 @@ import { theme } from '../../global/styles';
 
 export const styles = StyleSheet.create({
  container: {
-  flex: 0,
+  flex: 2,
   justifyContent: 'space-between',
   alignItems: 'center',
   width: '100%',
@@ -17,6 +17,7 @@ export const styles = StyleSheet.create({
   marginBottom: 20
  },
  ViewContainer: {
+  flex: 3,
   borderTopLeftRadius: 20,
   borderTopRightRadius: 20,
   width: '100%',
@@ -31,7 +32,6 @@ export const styles = StyleSheet.create({
   fontSize: 32,
   color: '#000',
   fontFamily: theme.fonts.title700,
-  marginBottom: 30,
  },
  formPhoto: {
   alignItems: 'center',
