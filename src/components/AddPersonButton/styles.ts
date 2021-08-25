@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
   justifyContent: 'center',
   backgroundColor: 'rgba(45, 156, 219, 1)',
   position: 'absolute',
-  left: '105%',
-  top: '100%'
+  left: '104%',
+  top: '90%'
  },
 });

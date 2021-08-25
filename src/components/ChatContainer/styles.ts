@@ -27,7 +27,7 @@ export const styles = StyleSheet.create({
   opacity: 0.7
  },
  notification: {
-  marginLeft: 18,
+  marginLeft: 30,
   fontFamily: theme.fonts.title500,
   alignItems: 'center',
  },
