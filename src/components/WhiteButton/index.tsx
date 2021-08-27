@@ -16,7 +16,7 @@ export function WhiteButton({ children, marginBottom, ...rest }: ButtonProps) {
       style={[styles.button, { marginBottom }]}
       {...rest}
     >
-      <Octicons name="info" size={24} color="#2F80ED" />
+      <Octicons name="info" style={[styles.info]} size={24} color="#2F80ED" />
 
       <Text style={styles.text}> {children} </Text>
     </TouchableOpacity>

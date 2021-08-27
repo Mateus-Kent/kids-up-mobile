@@ -12,12 +12,17 @@ export const styles = StyleSheet.create({
   width: '100%',
   borderColor: '#2F80ED',
   borderWidth: 3,
-  borderStyle: 'solid'
+  borderStyle: 'solid',
+  position: 'relative',
  },
  text: {
  color: '#2F80ED',
  textAlign: 'center',
  fontFamily: theme.fonts.title600,
  fontSize: 18,
+ },
+ info: {
+  position: 'absolute',
+  right: '85%'
  }
 });
