@@ -17,9 +17,12 @@ export function Config() {
       <View style={styles.ViewContainer}>
         <ButtonPattern marginBottom={18}>Alterar perfil</ButtonPattern>
 
-        <ButtonPattern marginBottom={122}>Alterar senha</ButtonPattern>
+        <ButtonPattern marginBottom={100}>Alterar senha</ButtonPattern>
 
-        <WhiteButton marginBottom={113}>Suporte</WhiteButton>
+        <WhiteButton marginBottom={18}>Suporte</WhiteButton>
+
+        <Text style={styles.textGray}>KIDS UP</Text>
+        <Text style={styles.textGray}>Versão 0.0.1a</Text>
       </View>
     </LinearGradient>
   );

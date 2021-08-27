@@ -33,5 +33,10 @@ export const styles = StyleSheet.create({
   alignItems: 'center',
   justifyContent: 'space-between',
   paddingVertical: 30,
+ },
+ textGray: {
+  color: 'rgba(0, 0, 0, 0.45)',
+  fontFamily: theme.fonts.title500,
+  fontSize: 20
  }
 });
