@@ -1,12 +1,13 @@
 import React from "react";
 import { View, Image, Text } from "react-native";
 import { styles } from "./styles";
+import { RectButton } from "react-native-gesture-handler";
 
 import defaultProfile from "../../assets/defaultProfile.png"
 
 export function ChatContainer() {
   return (
-    <View
+    <RectButton
       style={styles.container}
     >
       <View>
@@ -25,6 +26,6 @@ export function ChatContainer() {
        </View>
      </View>
 
-    </View>
+    </RectButton>
   );
 }

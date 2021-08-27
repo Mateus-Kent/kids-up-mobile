@@ -1,14 +1,20 @@
 import React from "react";
-import { View } from "react-native";
+import { RectButton } from "react-native-gesture-handler";
 
 import { styles } from "./styles";
-import MenuSvg  from "../../assets/Menu.svg"
+import MenuSvg  from "../../assets/Menu.svg";
 
-export function ConfigIcon() {
+type ButtonProps = {
+  navigation: any;
+  handleOnTapRegister?: any;
+};
+
+
+export function ConfigIcon({ navigation }: ButtonProps) {
 
   return (
-    <View style={styles.container}>
+    <RectButton style={styles.container} onPress={() => navigation.navigate("Config")}>
      <MenuSvg  />
-    </View>
+    </RectButton>
   );
 }
