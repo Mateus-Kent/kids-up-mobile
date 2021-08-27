@@ -7,6 +7,7 @@ import { Signin } from "../screens/Signin";
 import { Login } from "../screens/Login";
 import { MainScreen } from "../screens/MainScreen";
 import { SelectPhoto } from "../screens/SelectPhoto";
+import { Config } from "../screens/Config";
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -31,6 +32,8 @@ export function AllRoutes() {
       <Screen name="SelectPhoto" component={SelectPhoto} />
 
       <Screen name="MainScreen" component={MainScreen} />
+
+      <Screen name="Config" component={Config} />
     </Navigator>
   );
 }
