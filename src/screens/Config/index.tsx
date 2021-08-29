@@ -21,7 +21,7 @@ export function Config({ navigation }: ConfigProps) {
       <View style={styles.ViewContainer}>
         <ButtonPattern marginBottom={18} onPress={() => navigation.navigate('EditProfile')} >Alterar perfil</ButtonPattern>
 
-        <ButtonPattern marginBottom={100}>Alterar senha</ButtonPattern>
+        <ButtonPattern marginBottom={100} onPress={() => navigation.navigate('ChangePassword')}>Alterar senha</ButtonPattern>
 
         <WhiteButton marginBottom={18}>Suporte</WhiteButton>
 

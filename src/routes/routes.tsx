@@ -9,6 +9,7 @@ import { MainScreen } from "../screens/MainScreen";
 import { SelectPhoto } from "../screens/SelectPhoto";
 import { Config } from "../screens/Config";
 import { EditProfile } from "../screens/EditProfile";
+import { ChangePassword } from "../screens/ChangePassword";
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -37,6 +38,8 @@ export function AllRoutes() {
       <Screen name="Config" component={Config} />
 
       <Screen name="EditProfile" component={EditProfile} />
+
+      <Screen name="ChangePassword" component={ChangePassword} />
     </Navigator>
   );
 }
