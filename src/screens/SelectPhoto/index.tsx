@@ -34,11 +34,11 @@ export function SelectPhoto({ navigation }: SelectProps) {
           <Input
             name={"username"}
             placeholder="nome de usuário"
+            marginBottom={20}
           />
         </Form>
 
         <ButtonPattern
-          marginBottom={20}
           onPress={() => navigation.navigate("MainScreen")}
         >
           Próximo
