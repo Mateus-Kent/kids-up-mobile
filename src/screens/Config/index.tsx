@@ -6,7 +6,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { styles } from "./styles";
 
 import { ButtonPattern } from "../../components/ButtonPattern";
-import { WhiteButton } from "../../components/WhiteButton";
+import { SupportButton } from "../../components/SupportButton";
 
 type ConfigProps = {
   navigation: any;
@@ -42,7 +42,7 @@ export function Config({ navigation }: ConfigProps) {
           Alterar senha
         </ButtonPattern>
 
-        <WhiteButton marginBottom={18}>Suporte</WhiteButton>
+        <SupportButton marginBottom={18}>Suporte</SupportButton>
 
         <Text style={styles.textGray}>KIDS UP</Text>
         <Text style={styles.textGray}>Versão 0.0.1a</Text>
