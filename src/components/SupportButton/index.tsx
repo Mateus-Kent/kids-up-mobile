@@ -9,7 +9,7 @@ type ButtonProps = {
   marginBottom?: number;
 };
 
-export function WhiteButton({ children, marginBottom, ...rest }: ButtonProps) {
+export function SupportButton({ children, marginBottom, ...rest }: ButtonProps) {
   return (
     <TouchableOpacity
       activeOpacity={0.5}
