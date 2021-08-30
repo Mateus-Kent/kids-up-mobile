@@ -73,7 +73,13 @@ export function Signin({ navigation }: SigninProps) {
             </ButtonPattern>
 
             <Text>
-              Já possui uma conta? <Text style={styles.LinkText}>Entre</Text>{" "}
+              Já possui uma conta?{" "}
+              <Text
+                style={styles.LinkText}
+                onPress={() => navigation.navigate("Login")}
+              >
+                Entre
+              </Text>{" "}
             </Text>
           </View>
         </LinearGradient>
