@@ -1,6 +1,7 @@
 import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { View, Text } from "react-native";
+import { AntDesign } from "@expo/vector-icons";
 
 import { styles } from "./styles";
 
@@ -14,6 +15,8 @@ type ConfigProps = {
 export function Config({ navigation }: ConfigProps) {
   return (
     <LinearGradient style={styles.container} colors={["#2D9CDB", "#2F80ED"]}>
+      <AntDesign name="left" size={24} color="#fff" style={styles.icon} />
+
       <View style={styles.viewBar}>
         <Text style={styles.title}>Configurações</Text>
       </View>

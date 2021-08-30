@@ -3,6 +3,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { View, Text } from "react-native";
 import { Form } from "@unform/mobile";
 import { FormHandles } from "@unform/core";
+import { AntDesign } from "@expo/vector-icons";
 
 import { styles } from "./styles";
 
@@ -16,6 +17,7 @@ export function ChangePassword() {
 
   return (
     <LinearGradient style={styles.container} colors={["#2D9CDB", "#2F80ED"]}>
+      <AntDesign name="left" size={24} color="#fff" style={styles.icon} />
       <View style={styles.viewBar}>
         <Text style={styles.title}>Alterar senha</Text>
       </View>

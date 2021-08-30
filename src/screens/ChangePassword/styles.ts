@@ -8,6 +8,12 @@ export const styles = StyleSheet.create({
   justifyContent: 'center',
   alignItems: 'center',
   width: '100%',
+  position: 'relative'
+ },
+ icon: {
+  position: 'absolute',
+  top: '15%',
+  right: '85%',
  },
  viewBar: {
   flex: 1,

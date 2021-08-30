@@ -2,20 +2,19 @@ import React, { useRef } from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { View, Text, ScrollView, KeyboardAvoidingView } from "react-native";
 import { Form } from "@unform/mobile";
+import { AntDesign } from "@expo/vector-icons";
+import { FormHandles } from "@unform/core";
 
 import { styles } from "./styles";
 
 import { ButtonPattern } from "../../components/ButtonPattern";
 import { Input } from "../../components/Input";
 
-import { FormHandles } from "@unform/core";
-
 type LoginProps = {
-  navigation: any
-  }
+  navigation: any;
+};
 
-export function Login({navigation}: LoginProps) {
-
+export function Login({ navigation }: LoginProps) {
   const formRef = useRef<FormHandles>(null);
 
   function handleSubmit(data: any) {}
@@ -23,6 +22,7 @@ export function Login({navigation}: LoginProps) {
   return (
     <KeyboardAvoidingView style={styles.keyBoard}>
       <LinearGradient style={styles.container} colors={["#2D9CDB", "#2F80ED"]}>
+        <AntDesign name="left" size={24} color="#fff" style={styles.icon} />
         <ScrollView
           style={styles.scroll}
           contentContainerStyle={styles.scroll2}
@@ -50,7 +50,7 @@ export function Login({navigation}: LoginProps) {
               />
             </Form>
 
-            <ButtonPattern  onPress={() => navigation.navigate('MainScreen')}>
+            <ButtonPattern onPress={() => navigation.navigate("MainScreen")}>
               Entrar
             </ButtonPattern>
 

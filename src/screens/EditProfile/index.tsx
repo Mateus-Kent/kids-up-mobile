@@ -3,13 +3,15 @@ import { LinearGradient } from "expo-linear-gradient";
 import { View, Text, Image } from "react-native";
 import { Form } from "@unform/mobile";
 import { FormHandles } from "@unform/core";
+import { AntDesign } from "@expo/vector-icons";
 
 import { styles } from "./styles";
+
+import defaultProfile from "../../assets/defaultProfile.png";
 
 import { ButtonPattern } from "../../components/ButtonPattern";
 import { Input } from "../../components/Input";
 import { EditButton } from "../../components/EditButton";
-import defaultProfile from "../../assets/defaultProfile.png";
 
 export function EditProfile() {
   const formRef = useRef<FormHandles>(null);
@@ -18,8 +20,9 @@ export function EditProfile() {
 
   return (
     <LinearGradient style={styles.container} colors={["#2D9CDB", "#2F80ED"]}>
+      <AntDesign name="left" size={24} color="#fff" style={styles.icon} />
       <View style={styles.viewBar}>
-        <Text style={styles.title}>Editar Perfil</Text>
+        <Text style={styles.title}>Alterar perfil</Text>
       </View>
 
       <View style={styles.ViewContainer}>

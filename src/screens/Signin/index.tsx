@@ -2,13 +2,14 @@ import React, { useRef } from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { View, Text, ScrollView, KeyboardAvoidingView } from "react-native";
 import { Form } from "@unform/mobile";
+import { AntDesign } from "@expo/vector-icons";
+import { FormHandles } from "@unform/core";
 
 import { styles } from "./styles";
 
 import { ButtonPattern } from "../../components/ButtonPattern";
 import { Input } from "../../components/Input";
 
-import { FormHandles } from "@unform/core";
 
 type SigninProps = {
   navigation: any
@@ -24,6 +25,8 @@ export function Signin({ navigation}: SigninProps ) {
     <KeyboardAvoidingView style={styles.keyBoard}>
     <ScrollView>
       <LinearGradient style={styles.container} colors={["#2D9CDB", "#2F80ED"]}>
+      <AntDesign name="left" size={24} color="#fff" style={styles.icon} />
+
         <Text style={styles.title}>KIDS UP</Text>
 
         <View style={styles.ViewContainer}>

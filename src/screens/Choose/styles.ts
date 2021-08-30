@@ -7,6 +7,12 @@ export const styles = StyleSheet.create({
   flex: 1,
   justifyContent: 'space-between',
   alignItems: 'center',
+  position: 'relative'
+ },
+ icon: {
+  position: 'absolute',
+  top: '10%',
+  right: '85%',
  },
  title:{
   fontSize: 45,

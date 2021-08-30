@@ -11,6 +11,12 @@ export const styles = StyleSheet.create({
   flex: 0,
   justifyContent: 'space-between',
   alignItems: 'center',
+  position: 'relative'
+ },
+ icon: {
+  position: 'absolute',
+  top: '8%',
+  right: '85%',
  },
  title: {
   fontSize: 45,

@@ -1,21 +1,20 @@
 import React from "react";
 import { Text, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+import { AntDesign } from "@expo/vector-icons";
 
 import { styles } from "./styles";
 
-import { NotificationBar } from "../../components/Bar/NotificationBar";
 import { ButtonPattern } from "../../components/ButtonPattern";
 
 type ChooseProps = {
-navigation: any
-}
+  navigation: any;
+};
 
 export function Choose({ navigation }: ChooseProps) {
-  
   return (
     <LinearGradient style={styles.container} colors={["#2D9CDB", "#2F80ED"]}>
-      <NotificationBar />
+      <AntDesign name="left" size={24} color="#fff" style={styles.icon} />
 
       <Text style={styles.title}>KIDS UP</Text>
 
@@ -28,11 +27,16 @@ export function Choose({ navigation }: ChooseProps) {
       <View style={styles.ViewContainer}>
         <Text style={styles.caption}>Registrar</Text>
 
-        <ButtonPattern marginBottom={18} onPress={() => navigation.navigate('Signin')}>
+        <ButtonPattern
+          marginBottom={18}
+          onPress={() => navigation.navigate("Signin")}
+        >
           Sou responsável
         </ButtonPattern>
 
-        <ButtonPattern onPress={() => navigation.navigate('Signin')}>Sou funcionário</ButtonPattern>
+        <ButtonPattern onPress={() => navigation.navigate("Signin")}>
+          Sou funcionário
+        </ButtonPattern>
       </View>
     </LinearGradient>
   );
