@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, TouchableOpacity } from "react-native";
+import { Linking, Text, TouchableOpacity } from "react-native";
 import { styles } from "./styles";
 
 import { Octicons } from "@expo/vector-icons";
@@ -13,6 +13,7 @@ export function WhiteButton({ children, marginBottom, ...rest }: ButtonProps) {
   return (
     <TouchableOpacity
       activeOpacity={0.5}
+      onPress={() => Linking.openURL('mailto:contato@kidsup.com.br?subject=Email para suporte&body=')}
       style={[styles.button, { marginBottom }]}
       {...rest}
     >
