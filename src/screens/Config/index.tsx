@@ -9,22 +9,38 @@ import { ButtonPattern } from "../../components/ButtonPattern";
 import { WhiteButton } from "../../components/WhiteButton";
 
 type ConfigProps = {
-  navigation: any
-  }
+  navigation: any;
+};
 
 export function Config({ navigation }: ConfigProps) {
   return (
     <LinearGradient style={styles.container} colors={["#2D9CDB", "#2F80ED"]}>
-      <AntDesign name="left" size={24} color="#fff" style={styles.icon} />
+      <AntDesign
+        name="left"
+        size={24}
+        color="#fff"
+        style={styles.icon}
+        onPress={() => navigation.navigate("MainScreen")}
+      />
 
       <View style={styles.viewBar}>
         <Text style={styles.title}>Configurações</Text>
       </View>
 
       <View style={styles.ViewContainer}>
-        <ButtonPattern marginBottom={18} onPress={() => navigation.navigate('EditProfile')} >Alterar perfil</ButtonPattern>
+        <ButtonPattern
+          marginBottom={18}
+          onPress={() => navigation.navigate("EditProfile")}
+        >
+          Alterar perfil
+        </ButtonPattern>
 
-        <ButtonPattern marginBottom={100} onPress={() => navigation.navigate('ChangePassword')}>Alterar senha</ButtonPattern>
+        <ButtonPattern
+          marginBottom={100}
+          onPress={() => navigation.navigate("ChangePassword")}
+        >
+          Alterar senha
+        </ButtonPattern>
 
         <WhiteButton marginBottom={18}>Suporte</WhiteButton>
 

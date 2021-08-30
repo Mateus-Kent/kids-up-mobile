@@ -14,7 +14,13 @@ type ChooseProps = {
 export function Choose({ navigation }: ChooseProps) {
   return (
     <LinearGradient style={styles.container} colors={["#2D9CDB", "#2F80ED"]}>
-      <AntDesign name="left" size={24} color="#fff" style={styles.icon} />
+      <AntDesign
+        name="left"
+        size={24}
+        color="#fff"
+        style={styles.icon}
+        onPress={() => navigation.navigate("Become")}
+      />
 
       <Text style={styles.title}>KIDS UP</Text>
 
