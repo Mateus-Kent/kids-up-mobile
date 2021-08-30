@@ -18,6 +18,7 @@ export const styles = StyleSheet.create({
   position: 'absolute',
   top: '15%',
   right: '85%',
+  zIndex: 999
  },
  scroll: {
   flex: 1,

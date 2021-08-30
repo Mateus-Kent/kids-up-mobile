@@ -21,8 +21,14 @@ export function Login({ navigation }: LoginProps) {
 
   return (
     <KeyboardAvoidingView style={styles.keyBoard}>
+      <AntDesign
+        name="left"
+        size={24}
+        color="#fff"
+        style={styles.icon}
+        onPress={() => navigation.navigate("Become")}
+      />
       <LinearGradient style={styles.container} colors={["#2D9CDB", "#2F80ED"]}>
-        <AntDesign name="left" size={24} color="#fff" style={styles.icon} />
         <ScrollView
           style={styles.scroll}
           contentContainerStyle={styles.scroll2}
@@ -56,7 +62,12 @@ export function Login({ navigation }: LoginProps) {
 
             <Text>
               Você não possui uma conta?{" "}
-              <Text style={styles.LinkText}>Registre-se</Text>{" "}
+              <Text
+                style={styles.LinkText}
+                onPress={() => navigation.navigate("Signin")}
+              >
+                Registre-se
+              </Text>
             </Text>
           </View>
         </ScrollView>
