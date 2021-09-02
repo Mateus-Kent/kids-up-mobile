@@ -64,7 +64,7 @@ export function Login({ navigation }: LoginProps) {
               Você não possui uma conta?{" "}
               <Text
                 style={styles.LinkText}
-                onPress={() => navigation.navigate("Signin")}
+                onPress={() => navigation.navigate("Choose")}
               >
                 Registre-se
               </Text>
