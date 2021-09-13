@@ -10,6 +10,7 @@ import { SelectPhoto } from "../screens/SelectPhoto";
 import { Config } from "../screens/Config";
 import { EditProfile } from "../screens/EditProfile";
 import { ChangePassword } from "../screens/ChangePassword";
+import { Chat } from "../screens/Chat";
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -40,6 +41,8 @@ export function AllRoutes() {
       <Screen name="EditProfile" component={EditProfile} />
 
       <Screen name="ChangePassword" component={ChangePassword} />
+
+      <Screen name="Chat" component={Chat} />
     </Navigator>
   );
 }

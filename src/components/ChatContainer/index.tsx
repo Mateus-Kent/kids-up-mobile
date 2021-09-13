@@ -5,10 +5,16 @@ import { RectButton } from "react-native-gesture-handler";
 
 import defaultProfile from "../../assets/defaultProfile.png"
 
-export function ChatContainer() {
+type ContainerProps = {
+  navigation: any;
+  handleOnTapRegister?: any;
+};
+
+export function ChatContainer({ navigation }: ContainerProps) {
   return (
     <RectButton
       style={styles.container}
+      onPress={() => navigation.navigate("Chat")}
     >
       <View>
      <Image source={defaultProfile} style={styles.profilePic}/>

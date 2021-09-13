@@ -8,8 +8,6 @@ interface InputProps extends TextInputProps {
   name: string;
   label?: string;
   placeholder?: string;
-  marginBottom?: number;
-  marginHorizontal?: number;
 }
 
 interface InputReference extends TextInput {

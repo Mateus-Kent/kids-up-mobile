@@ -11,9 +11,7 @@ import { ChatContainer } from "../../components/ChatContainer";
 import { AddPersonButton } from "../../components/AddPersonButton";
 
 export function MainScreen() {
-
   const navigation = useNavigation();
-
 
   return (
     <LinearGradient style={styles.container} colors={["#2D9CDB", "#2F80ED"]}>
@@ -25,7 +23,7 @@ export function MainScreen() {
         </View>
 
         <View style={styles.ViewContainer}>
-          <ChatContainer />
+          <ChatContainer navigation={navigation} />
 
           <AddPersonButton />
         </View>
