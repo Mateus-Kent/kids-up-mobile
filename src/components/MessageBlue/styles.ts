@@ -6,23 +6,23 @@ export const styles = StyleSheet.create({
   height: 58,
   width: 230,
   backgroundColor: '#2F80ED',
-  borderTopLeftRadius: 9,
-  borderBottomLeftRadius: 9,
-  borderBottomRightRadius: 9,
-  position: 'absolute',
-  marginBottom: 22
+  borderRadius: 9,
+  borderTopRightRadius: 0,
+  position: 'relative'
  },
  message: {
   fontSize: 12,
   fontFamily: theme.fonts.title500,
-  color: '#fff'
+  color: '#fff',
+  paddingTop: 15,
+  paddingLeft: 15,
  },
  hour: {
   fontSize: 12,
   fontFamily: theme.fonts.title500,
   color: '#fff',
   position: 'absolute',
-  left: '90%',
-  top: '95%'
+  left: '78%',
+  top: '64%'
  }
 });

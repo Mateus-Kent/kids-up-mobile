@@ -6,7 +6,7 @@ export function MessageBlue() {
   return (
     <View style={styles.container}>
       <Text style={styles.message}>A vitória tomou os remédios!</Text>
-      <Text style={styles.message}>20h45</Text>
+      <Text style={styles.hour}>20h45</Text>
     </View>
   );
 }
