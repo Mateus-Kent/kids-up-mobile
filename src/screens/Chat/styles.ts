@@ -31,7 +31,7 @@ export const styles = StyleSheet.create({
   borderRadius: 50,
   marginRight: 17,
  },
- text:{
+ text: {
   fontFamily: theme.fonts.title600,
   fontSize: 18,
   color: '#fff'
@@ -46,6 +46,17 @@ export const styles = StyleSheet.create({
   justifyContent: 'flex-end',
   paddingVertical: 16,
  },
+ ViewMessage: {
+  justifyContent: 'space-between',
+ },
+ MessageBlue: {
+
+ },
+ MessageGray: {
+  justifyContent: 'space-between',
+  alignItems: 'flex-start',
+ },
+
  SendMessage: {
   justifyContent: 'space-between',
   width: '90%',

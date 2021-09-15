@@ -8,6 +8,7 @@ import {
   ScrollView,
 } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
+import { Form } from "@unform/mobile";
 
 import { styles } from "./styles";
 
@@ -15,7 +16,8 @@ import defaultProfile from "../../assets/defaultProfile.png";
 
 import { SendButton } from "../../components/SendButton";
 import { InputMessage } from "../../components/InputMessage";
-import { Form } from "@unform/mobile";
+import { MessageBlue } from "../../components/MessageBlue";
+import { MessageGray } from "../../components/MessageGray";
 
 type ConfigProps = {
   navigation: any;
@@ -40,6 +42,16 @@ export function Chat({ navigation }: ConfigProps) {
         </View>
 
         <View style={styles.ViewContainer}>
+          <View style={styles.ViewMessage}>
+            <View style={styles.MessageGray}>
+              <MessageGray />
+            </View>
+
+            <View>
+              <MessageBlue />
+            </View>
+          </View>
+
           <Form
             style={styles.SendMessage}
             onSubmit={() => {
