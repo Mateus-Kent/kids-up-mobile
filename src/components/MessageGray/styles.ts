@@ -6,15 +6,15 @@ export const styles = StyleSheet.create({
   height: 58,
   width: 230,
   backgroundColor: '#EEEDED',
-  borderTopLeftRadius: 9,
-  borderBottomLeftRadius: 9,
-  borderBottomRightRadius: 9,
-  position: 'absolute',
-  marginBottom: 22
+  borderRadius: 9,
+  borderTopLeftRadius: 0,
+  position: 'relative'
  },
  message: {
   fontSize: 12,
-  fontFamily: theme.fonts.title500
+  fontFamily: theme.fonts.title500,
+  paddingTop: 15,
+  paddingLeft: 15,
  },
  hour: {
   fontSize: 12,
@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
   color: '#000',
   opacity: 0.5,
   position: 'absolute',
-  left: '90%',
-  top: '95%'
+  left: '78%',
+  top: '64%'
  }
 });
