@@ -42,14 +42,16 @@ export function Chat({ navigation }: ConfigProps) {
         </View>
 
         <View style={styles.ViewContainer}>
+
           <View style={styles.ViewMessage}>
-            <View style={styles.MessageGray}>
+            <View style={[styles.Message, styles.MessageGrayDirection]}>
               <MessageGray />
             </View>
 
-            <View>
+            <View style={[styles.Message, styles.MessageBlueDirection]}>
               <MessageBlue />
             </View>
+            
           </View>
 
           <Form

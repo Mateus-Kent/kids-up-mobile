@@ -43,20 +43,25 @@ export const styles = StyleSheet.create({
   width: '100%',
   backgroundColor: "#fff",
   alignItems: 'center',
-  justifyContent: 'flex-end',
+  justifyContent: 'space-between',
   paddingVertical: 16,
  },
  ViewMessage: {
-  justifyContent: 'space-between',
+ height: '88%',
+ width: '90%',
+ flexDirection: 'column'
  },
- MessageBlue: {
-
+ Message: {
+ flexDirection: 'row',
+ width: '100%',
+ marginBottom: 22
  },
- MessageGray: {
-  justifyContent: 'space-between',
-  alignItems: 'flex-start',
+ MessageGrayDirection: {
+  justifyContent: 'flex-start',
  },
-
+ MessageBlueDirection: {
+  justifyContent: 'flex-end',
+ },
  SendMessage: {
   justifyContent: 'space-between',
   width: '90%',
