@@ -25,7 +25,7 @@ export function MainScreen() {
         <View style={styles.ViewContainer}>
           <ChatContainer navigation={navigation} />
 
-          <AddPersonButton />
+          <AddPersonButton navigation={navigation}/>
         </View>
       </ScrollView>
     </LinearGradient>
