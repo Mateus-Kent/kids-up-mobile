@@ -26,7 +26,7 @@ export function AddContact({ navigation }: AddContactProps) {
         size={24}
         color="#fff"
         style={styles.icon}
-        onPress={() => navigation.navigate("Config")}
+        onPress={() => navigation.navigate("MainScreen")}
       />
       <View style={styles.viewBar}>
         <Text style={styles.title}>Adicionar um contato</Text>
