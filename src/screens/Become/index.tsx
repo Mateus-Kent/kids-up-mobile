@@ -1,6 +1,8 @@
 import React from "react";
 import { Text } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+import { useNavigation } from "@react-navigation/native";
+
 
 import ChooseImgSvg from "../../assets/ChooseImage.svg";
 
@@ -9,7 +11,6 @@ import { styles } from "./styles";
 import { NotificationBar } from "../../components/Bar/NotificationBar";
 import { ButtonChoose } from "../../components/ButtonChoose";
 
-import { useNavigation } from "@react-navigation/native";
 
 export function Become() {
   const navigation = useNavigation();
