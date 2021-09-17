@@ -11,6 +11,7 @@ import { Config } from "../screens/Config";
 import { EditProfile } from "../screens/EditProfile";
 import { ChangePassword } from "../screens/ChangePassword";
 import { Chat } from "../screens/Chat";
+import { AddContact } from "../screens/AddContact";
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -43,6 +44,8 @@ export function AllRoutes() {
       <Screen name="ChangePassword" component={ChangePassword} />
 
       <Screen name="Chat" component={Chat} />
+
+      <Screen name="AddContact" component={AddContact} />
     </Navigator>
   );
 }
