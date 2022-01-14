@@ -5,7 +5,7 @@
  ### Kids Up is an app that facilitates the communication of parents and caregivers in a day care center
   - This version is just the visual part of the project
 
-  ## 💻 Preview
+  ## 📱 Preview
 <img id="Preview" src="./.github/images/KidsUpPreview.svg" >
 
  ## 👨‍💻 This project was developed with the following technologies:
